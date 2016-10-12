@@ -1,0 +1,223 @@
+/* Colors */
+/* Main: #D76B6B */
+/* Secondary: #F8D932 */
+/* Highlight: #F8D932 */
+/* White: #FFF */
+
+/* SimulaImob_one: #10D6DF */
+/* SimulaImob_two: #2FF0C2 */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 250px;
+}
+
+.hero {
+  background-color: #D76B6B;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.more {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more:hover .arrow {
+  transform: scale(1.1);
+}
+
+.arrow {
+  width: 50%;
+  transition: transform 200ms ease-in-out;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  margin: 1.5em 0;
+}
+
+.portifolio {
+  width: 100%;
+}
+
+.job {
+  padding: 5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-container {
+  width: 80%;
+  max-width: 1024px;
+}
+
+.job-figure {
+  float: left;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.job-logo {
+  width: 70%;
+}
+
+.job-title {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 1em;
+  margin-right: .7em;
+  color: #FFF;
+}
+
+.description {
+  color: #FFF;
+  width: 60%;
+  float: right;
+}
+
+.content {
+  text-align: justify;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #FFF;
+  color: #10D6DF;
+  border-radius: 4px;
+  padding: .8em 1.5em;
+  text-transform: uppercase;
+  transition: color 100ms ease-in-out, background 500ms ease-in-out;
+}
+
+.button:hover {
+  color: #2FF0C2;
+  background-color: #F0F0F0;
+}
+
+.button-access {
+  margin-top: 1em;
+  float: right;
+}
+
+.simulaimob {
+  background: #10D6DF;
+  background: linear-gradient(45deg, #10D6DF, #2FF0C2);
+}
+
+.contact {
+  background-color: #F8D932;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact .title {
+  margin: .7em 0;
+}
+
+.mail {
+  color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.mail:hover {
+  color: #FDFDFD;
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 1rem;
+  }
+  .mail {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 765px) {
+  .logo {
+    width: 150px;
+  }
+  .hero {
+    height: 300px;
+  }
+  .more {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .job-figure {
+    float: none;
+    width: 100%;
+  }
+  .job-logo {
+    width: 35%;
+  }
+  .job-title {
+    font-size: 1.8rem;
+  }
+  .description {
+    float: none;
+    width: 100%;
+    margin-top: 2em;
+  }
+  .content {
+    font-size: .9rem;
+  }
+  .button-access {
+    margin-top: 3em;
+    float: none;
+    display: block;
+    font-size: .9rem;
+    text-align: center;
+  }
+}

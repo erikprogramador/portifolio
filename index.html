@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ErikProgramador</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      font-size: 16px;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+    a {
+      text-decoration: none;
+      color: #4286f4;
+      transition: color 100ms ease-in-out;
+      outline: none;
+    }
+    a:hover {
+      color: #10D6DF;
+    }
+    .header {
+      width: 100%;
+      padding: 1.5em 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .hero {
+      width: 100%;
+      height: 500px;
+      padding: 2em 0;
+    }
+    .contact {
+      width: 100%;
+      height: 300px;
+      padding: 2em 0;
+    }
+  </style>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="images/logo.svg" alt="ErikProgramador">
+  </header>
+  <section class="hero">
+    <h1 class="title">Veja meu portifólio logo abaixo</h1>
+    <a class="more js-arrow" href="#portifolio">
+      <img class="arrow" src="images/arrow.svg" alt="Seta para baixo">
+    </a>
+  </section>
+  <section class="portifolio js-portifolio">
+    <div class="job simulaimob">
+      <div class="job-container clearfix">
+        <figure class="job-figure">
+          <img class="job-logo" src="images/chat-logo.svg" alt="SimulaImob">
+          <figcaption class="job-title">SimulaImob</figcaption>
+        </figure>
+        <div class="description">
+          <p class="content">SimulaImob é um chat interativo, onde você pode simular o financiamento do seu futuro imóvel.</p>
+          <p class="content">Um sistema desenvolvido com tecnologias modenas, e tecnicas de desenvolvimento que garantem qualidade de código e do produto.</p>
+        </div>
+        <div style="clear: both;"></div>
+        <a href="http://simulaimob.com.br" class="button button-access">Acesse o Site</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <h2 class="title">Entre em contato</h2>
+    <a href="mailto:erik.vanderlei.programador@outlook.com" class="mail">erik.vanderlei.programador@outlook.com</a>
+  </section>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(function () {
+          console.log('SW Register');
+        })
+        .catch(function () {
+          console.log('Error on register the SW');
+        });
+    }
+  </script>
+</body>
+</html>
