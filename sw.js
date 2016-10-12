@@ -13,5 +13,6 @@ toolbox.precache([
 ]);
 
 toolbox.router.get('/', toolbox.fastest);
+toolbox.router.get('/^portifolio\//', toolbox.fastest);
 toolbox.router.get('/(.*)', toolbox.fastest);
-toolbox.router.get('/^https://fonts.googleapis.com/\\(.*)', toolbox.fastest);
+toolbox.router.get('/^https://fonts.googleapis.com\//(.*)', toolbox.fastest);
